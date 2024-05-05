@@ -91,7 +91,7 @@ def main():
     print("Type 'quit' to end the conversation.")
 
     while True:
-        user_input = input("You: ")
+        user_input = input("You: ").lower()
         response = chatbot.respond(user_input)
         print("Chatbot:", response)
 
