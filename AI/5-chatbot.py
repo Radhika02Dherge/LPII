@@ -39,7 +39,7 @@ pairs = [
     ],
     [
         r"(.*) created ?",
-        ["Rahul Jadahv created me using Python's NLTK library ", "top secret ;)",]
+        ["Radhika Dherge created me using Python's NLTK library ", "top secret ;)",]
     ],
     [
         r"(.*) (location|city) ?",
@@ -67,7 +67,7 @@ pairs = [
     ],
     [
         r"who (.*) (Cricketer|Batsman)?",
-        ["Virat Kohli"]
+        ["Sachin Tendulkar"]
     ],
     [
         r"customer service",
