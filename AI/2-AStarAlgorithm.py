@@ -51,21 +51,20 @@ def get_neighbors(v):
         return None
 def heuristic(n):
         H_dist = {
-            'A': 11,
-            'B': 6,
-            'C': 99,
-            'D': 1,
-            'E': 7,
-            'G': 0,
-             
+            'S': 5,
+            'A': 3,
+            'B': 4,
+            'C': 2,
+            'D': 6,
+            'G': 0,     
         }
         return H_dist[n] 
-Graph_nodes = {
-    'A': [('B', 2), ('E', 3)],
-    'B': [('C', 1),('G', 9)],
-    'C': None,
-    'E': [('D', 6)],
-    'D': [('G', 1)],
+Graph_nodes = {'S':[('A',1),('G',10)],
+    'A': [('B', 2), ('C', 1)],
+    'B': [('D', 5)],
+    'C': [('D',3),('G',4)],
+    'D': [('G', 2)],
+    'G':[('G',0)]
      
 }
-aStarAlgo('A', 'G')
+aStarAlgo('S', 'G')
