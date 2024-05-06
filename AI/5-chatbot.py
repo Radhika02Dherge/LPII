@@ -81,6 +81,10 @@ pairs = [
         r"quit",
         ["Bye take care. See you soon :) ", "It was nice talking to you. See you soon :)"]
     ],
+    [
+        r"(.*)",
+        ["Sorry, I didn't understand that. Can you please rephrase?",]
+    ]
 ]
 
 # Create a chatbot
